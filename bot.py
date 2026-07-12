@@ -30,24 +30,20 @@ def send_message(message):
 
 def main():
 
-    post = get_latest_post()
-    if isinstance(post, list):
-      post = post[0] if post else None
+    posts = get_latest_post()
+    if not posts:
+    print("No new posts found.")
+    return
 
-    if post is None:
-        print("No new post found.")
-        return
-
+for post in posts:
     message = format_post(post)
 
     result = send_message(message)
 
     if result.get("ok"):
         save_post(post["link"])
-        print("Post Sent Successfully")
+        print(f"Posted: {post['title']}")
     else:
         print(result)
-
-
-if __name__ == "__main__":
+if __name__ == "__main":    
     main()
