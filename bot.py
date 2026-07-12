@@ -43,7 +43,7 @@ for post in posts:
     if result.get("ok"):
         save_post(post["link"])
         print(f"Posted: {post['title']}")
-      else:
+    else:
         print(result)
 if __name__ == "__main":    
     main()
