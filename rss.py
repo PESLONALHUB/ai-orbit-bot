@@ -1,5 +1,5 @@
 import requests
-from config import RSS_TIMEOUT,FEEDS_FILE
+from config import RSS_TIMEOUT,FEEDS_FILE,MAX_POSTS_PER_RUN
 import feedparser
 from database import is_posted
 
@@ -8,6 +8,7 @@ def load_feeds():
         return [line.strip() for line in f if line.strip()]
 
 def get_latest_post():
+    posts = []
     feeds = load_feeds()
 
     for feed in feeds:
@@ -35,13 +36,16 @@ except Exception:
                 if is_posted(link):
                     continue
 
-                return {
-                    "title": title,
-                    "link": link,
-                    "summary": summary
-                }
+                posts.append({
+    "title": title,
+    "link": link,
+    "summary": summary
+})
+
+if len(posts) >= MAX_POSTS_PER_RUN:
+    return posts
 
         except Exception as e:
             print(f"RSS Error: {e}")
 
-    return None
+    return posts if posts else None 
