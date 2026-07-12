@@ -27,7 +27,7 @@ def format_post(post):
 
     title = clean_text(post["title"])
 
-    summary = short_summary(post["summary"])
+    summary = short_summary(post.get("summary","No summary available."))
 
     link = post["link"]
 
