@@ -14,8 +14,10 @@ def get_latest_post():
     for feed in feeds:
         try:
           response = requests.get(feed, timeout=RSS_TIMEOUT)
-          if response.status_code != 200:
+            
+          if response.status_code != 200:        
           continue
+            
           rss = feedparser.parse(response.content)
 
 except Exception:
