@@ -26,5 +26,5 @@ DEFAULT_HASHTAGS = [
     "#Tech",
     "#AITools"
 ]
-RSS_TIMEOUT = 10
+RSS_TIMEOUT = 15
 MAX_FEEDS_PER_RUN = 150
