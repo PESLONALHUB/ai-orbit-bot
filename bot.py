@@ -32,7 +32,7 @@ def main():
 
     post = get_latest_post()
     if isinstance(post, list):
-    post = post[0] if post else None
+      post = post[0] if post else None
 
     if post is None:
         print("No new post found.")
