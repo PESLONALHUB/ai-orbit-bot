@@ -1,3 +1,6 @@
+import requests
+import feedparser
+from config import RSS_TIMEOUT
 import feedparser
 from config import FEEDS_FILE
 from database import is_posted
@@ -11,7 +14,16 @@ def get_latest_post():
 
     for feed in feeds:
         try:
-            rss = feedparser.parse(feed)
+            try:
+    response = requests.get(feed, timeout=RSS_TIMEOUT)
+
+    if response.status_code != 200:
+        continue
+
+    rss = feedparser.parse(response.content)
+
+except Exception:
+    continue
 
             for item in rss.entries[:10]:
 
