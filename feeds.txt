@@ -1,0 +1,4 @@
+https://huggingface.co/blog/feed.xml
+https://www.marktechpost.com/feed/
+https://venturebeat.com/category/ai/feed/
+https://www.artificialintelligence-news.com/feed/
