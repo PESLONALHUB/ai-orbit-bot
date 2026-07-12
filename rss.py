@@ -1,8 +1,6 @@
 import requests
+from config import RSS_TIMEOUT,FEEDS_FILE
 import feedparser
-from config import RSS_TIMEOUT
-import feedparser
-from config import FEEDS_FILE
 from database import is_posted
 
 def load_feeds():
