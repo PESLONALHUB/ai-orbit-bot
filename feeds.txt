@@ -1,4 +1,15 @@
+https://openai.com/news/rss.xml
 https://huggingface.co/blog/feed.xml
 https://www.marktechpost.com/feed/
 https://venturebeat.com/category/ai/feed/
 https://www.artificialintelligence-news.com/feed/
+https://www.infoq.com/ai-ml/feed/
+https://blog.google/technology/ai/rss/
+https://www.microsoft.com/en-us/research/feed/
+https://developer.nvidia.com/blog/feed/
+https://aws.amazon.com/blogs/machine-learning/feed/
+https://news.mit.edu/rss/topic/artificial-intelligence2
+https://blog.roboflow.com/rss/
+https://www.unite.ai/feed/
+https://machinelearningmastery.com/feed/
+https://www.analyticsvidhya.com/feed/
