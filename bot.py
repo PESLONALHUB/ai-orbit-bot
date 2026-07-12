@@ -30,20 +30,31 @@ def send_message(message):
 
 def main():
 
-    posts = get_latest_post()
-    if not posts:
+    posts =     get_latest_post()
+    if not posts:    
        print("No new posts found.")
        return
 
-for post in posts:
-    message = format_post(post)
+def main():
+    posts = get_latest_post()
 
-    result = send_message(message)
+    if not posts:
+        print("No new posts found.")
+        return
 
-    if result.get("ok"):
-        save_post(post["link"])
-        print(f"Posted: {post['title']}")
-    else:
-        print(result)
+    for post in posts:
+        message = format_post(post)
+
+        result = send_message(message)
+
+        if result.get("ok"):
+            save_post(post["link"])
+            print(f"Posted: {post['title']}")
+        else:
+            print(result)
+
+
+if __name__ == "__main__":
+    main()
 if __name__ == "__main":    
     main()
