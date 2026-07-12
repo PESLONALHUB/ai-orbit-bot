@@ -24,7 +24,7 @@ def send_message(message):
     }
 
     response = requests.post(url, data=payload, timeout=20)
-response.raise_for_status()
+    response.raise_for_status()
     return response.json()
 
 
