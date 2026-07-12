@@ -13,7 +13,7 @@ def get_latest_post():
         try:
             rss = feedparser.parse(feed)
 
-            for item in rss.entries:
+            for item in rss.entries[:10]:
 
                 title = item.get("title", "").strip()
                 link = item.get("link", "").strip()
