@@ -19,10 +19,15 @@ def send_message(message):
         "chat_id": f"@{CHANNEL_USERNAME}",
         "text": message,
         "parse_mode": PARSE_MODE,
-        "disable_web_page_preview": DISABLE_WEB_PREVIEW
+        "disable_web_page_preview": DISABLE_WEB_PREVIEW,
     }
 
-    response = requests.post(url, data=payload, timeout=20)
+    response = requests.post(
+        url,
+        data=payload,
+        timeout=20
+    )
+
     response.raise_for_status()
     return response.json()
 
@@ -34,15 +39,25 @@ def main():
         print("No new posts found.")
         return
 
-    for post in posts:
-        message = format_post(post)
-        result = send_message(message)
+    success = 0
 
-        if result.get("ok"):
-            save_post(post["link"])
-            print(f"Posted: {post['title']}")
-        else:
-            print(result)
+    for post in posts:
+        try:
+            message = format_post(post)
+
+            result = send_message(message)
+
+            if result.get("ok"):
+                save_post(post["link"])
+                success += 1
+                print(f"Posted: {post['title']}")
+            else:
+                print(result)
+
+        except Exception as e:
+            print(f"Posting Error: {e}")
+
+    print(f"Finished. Posted {success} new articles.")
 
 
 if __name__ == "__main__":
