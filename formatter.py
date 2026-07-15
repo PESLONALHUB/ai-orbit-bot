@@ -1,48 +1,32 @@
-from config import DEFAULT_HASHTAGS
+import re
+
+from config import SUMMARY_LENGTH, DEFAULT_HASHTAGS
+
 
 def clean_text(text):
-    if not text:
-        return ""
-
-    text = text.replace("<p>", "")
-    text = text.replace("</p>", "")
-    text = text.replace("<br>", "")
-    text = text.replace("<br/>", "")
-    text = text.replace("&nbsp;", " ")
-    text = text.replace("&amp;", "&")
-
+    text = re.sub(r"<[^>]+>", "", text)
+    text = re.sub(r"\s+", " ", text)
     return text.strip()
 
 
-def short_summary(summary, limit=350):
-    summary = clean_text(summary)
-
-    if len(summary) <= limit:
-        return summary
-
-    return summary[:limit] + "..."
-
-
 def format_post(post):
-
     title = clean_text(post["title"])
+    summary = clean_text(post["summary"])
 
-    summary = short_summary(post.get("summary","No summary available."))
-
-    link = post["link"]
+    if len(summary) > SUMMARY_LENGTH:
+        summary = summary[:SUMMARY_LENGTH].rsplit(" ", 1)[0] + "..."
 
     hashtags = " ".join(DEFAULT_HASHTAGS)
 
-    message = f"""
-🚀 <b>AI Orbit</b>
+    return f"""🚀 AI Orbit
 
-📰 <b>{title}</b>
+📰 {title}
 
-📖 {summary}
+📝 Summary
+{summary}
 
-🔗 <a href="{link}">Read Full Article</a>
+🔗 Read More
+{post['link']}
 
 {hashtags}
 """
-
-    return message.strip()
