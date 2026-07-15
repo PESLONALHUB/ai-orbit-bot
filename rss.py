@@ -1,5 +1,6 @@
 import requests
 import feedparser
+import time
 
 from config import RSS_TIMEOUT, FEEDS_FILE, MAX_POSTS_PER_RUN
 from database import is_posted
@@ -10,10 +11,21 @@ def load_feeds():
         return [line.strip() for line in f if line.strip()]
 
 
+def get_post_time(item):
+    if hasattr(item, "published_parsed") and item.published_parsed:
+        return time.mktime(item.published_parsed)
+
+    if hasattr(item, "updated_parsed") and item.updated_parsed:
+        return time.mktime(item.updated_parsed)
+
+    return 0
+
+
 def get_latest_post():
-    posts = []
-    seen = set()
     feeds = load_feeds()
+
+    all_posts = []
+    seen = set()
 
     for feed in feeds:
         try:
@@ -24,7 +36,7 @@ def get_latest_post():
 
             rss = feedparser.parse(response.content)
 
-            for item in rss.entries[:10]:
+            for item in rss.entries:
 
                 title = item.get("title", "").strip()
                 link = item.get("link", "").strip()
@@ -33,33 +45,55 @@ def get_latest_post():
                 if not link:
                     continue
 
-                # Skip already posted links
                 if is_posted(link):
                     continue
 
-                # Unique ID (GUID > ID > LINK)
                 uid = (
                     item.get("id")
                     or item.get("guid")
                     or link
                 )
 
-                # Skip duplicate items in same run
                 if uid in seen:
                     continue
 
                 seen.add(uid)
 
-                posts.append({
+                all_posts.append({
                     "title": title,
                     "link": link,
-                    "summary": summary
+                    "summary": summary,
+                    "published": get_post_time(item)
                 })
-
-                if len(posts) >= MAX_POSTS_PER_RUN:
-                    return posts
 
         except Exception as e:
             print(f"RSS Error ({feed}): {e}")
 
-    return posts if posts else None
+    if not all_posts:
+        return None
+
+    all_posts.sort(
+        key=lambda x: x["published"],
+        reverse=True
+    )
+
+    unique_sources = set()
+    final_posts = []
+
+    for post in all_posts:
+
+        try:
+            domain = post["link"].split("/")[2]
+        except:
+            domain = post["link"]
+
+        if domain in unique_sources:
+            continue
+
+        unique_sources.add(domain)
+        final_posts.append(post)
+
+        if len(final_posts) >= MAX_POSTS_PER_RUN:
+            break
+
+    return final_posts
