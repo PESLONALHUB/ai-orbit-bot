@@ -23,7 +23,8 @@ jobs:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHANNEL_USERNAME: ${{ secrets.CHANNEL_USERNAME }}
         run: python bot.py
-        - name: Commit posted.json
+
+      - name: Commit posted.json
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
