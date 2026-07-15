@@ -1,6 +1,7 @@
 import requests
-from config import RSS_TIMEOUT, FEEDS_FILE, MAX_POSTS_PER_RUN
 import feedparser
+
+from config import RSS_TIMEOUT, FEEDS_FILE, MAX_POSTS_PER_RUN
 from database import is_posted
 
 
@@ -11,6 +12,7 @@ def load_feeds():
 
 def get_latest_post():
     posts = []
+    seen = set()
     feeds = load_feeds()
 
     for feed in feeds:
@@ -31,8 +33,22 @@ def get_latest_post():
                 if not link:
                     continue
 
+                # Skip already posted links
                 if is_posted(link):
                     continue
+
+                # Unique ID (GUID > ID > LINK)
+                uid = (
+                    item.get("id")
+                    or item.get("guid")
+                    or link
+                )
+
+                # Skip duplicate items in same run
+                if uid in seen:
+                    continue
+
+                seen.add(uid)
 
                 posts.append({
                     "title": title,
@@ -44,6 +60,6 @@ def get_latest_post():
                     return posts
 
         except Exception as e:
-            print(f"RSS Error: {e}")
+            print(f"RSS Error ({feed}): {e}")
 
     return posts if posts else None
