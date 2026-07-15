@@ -13,7 +13,6 @@ from database import save_post
 
 
 def send_message(message):
-
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
 
     payload = {
@@ -29,13 +28,6 @@ def send_message(message):
 
 
 def main():
-
-    posts =     get_latest_post()
-    if not posts:    
-       print("No new posts found.")
-       return
-
-def main():
     posts = get_latest_post()
 
     if not posts:
@@ -44,7 +36,6 @@ def main():
 
     for post in posts:
         message = format_post(post)
-
         result = send_message(message)
 
         if result.get("ok"):
@@ -55,6 +46,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
-if __name__ == "__main":    
     main()
