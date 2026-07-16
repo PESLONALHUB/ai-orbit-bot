@@ -28,5 +28,8 @@
     "https://huggingface.co/blog/Dharma-AI/newer-models-same-advantages",
     "https://venturebeat.com/ai/the-ai-compute-gap-enterprises-are-buying-infrastructure-faster-than-they-can-measure-what-it-costs",
     "https://www.langchain.com/blog/openwiki-0-2-adds-okf-support",
-    "https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb"
+    "https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb",
+    "https://aws.amazon.com/blogs/machine-learning/build-enterprise-search-for-agents-with-amazon-bedrock-managed-knowledge-base/",
+    "https://blogs.cisco.com/learning/empowering-latin-america-how-cisco-networking-academy-is-scaling-digital-skilling",
+    "https://blog.roboflow.com/serverless-inference-a-thousand-models-on-a-shared-gpu-fleet/"
 ]
