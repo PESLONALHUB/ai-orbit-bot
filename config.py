@@ -6,6 +6,10 @@ CHANNEL_USERNAME = os.getenv("CHANNEL_USERNAME")
 
 # OpenRouter AI
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
+
+# Model (Claude Sonnet 5)
+OPENROUTER_MODEL = "anthropic/claude-sonnet-4"
 
 # Files
 FEEDS_FILE = "feeds.txt"
@@ -22,6 +26,14 @@ DISABLE_WEB_PREVIEW = False
 MAX_POSTS_PER_RUN = 3
 REQUEST_TIMEOUT = 20
 
+# RSS
+RSS_TIMEOUT = 15
+MAX_FEEDS_PER_RUN = 150
+
+# AI
+SUMMARY_LENGTH = 350
+
+# Hashtags
 DEFAULT_HASHTAGS = [
     "#AI",
     "#ArtificialIntelligence",
@@ -29,10 +41,3 @@ DEFAULT_HASHTAGS = [
     "#Tech",
     "#AITools"
 ]
-
-# RSS
-RSS_TIMEOUT = 15
-MAX_FEEDS_PER_RUN = 150
-
-# AI Summary
-SUMMARY_LENGTH = 350
