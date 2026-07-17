@@ -1,67 +1,67 @@
-import os
 import requests
 
-API_KEY = os.getenv("OPENROUTER_API_KEY")
+from config import (
+    OPENROUTER_API_KEY,
+    OPENROUTER_URL,
+    OPENROUTER_MODEL,
+    SUMMARY_LENGTH,
+)
 
-MODEL = "anthropic/claude-sonnet-5"
 
-URL = "https://openrouter.ai/api/v1/chat/completions"
-
-
-def generate_summary(title, summary):
-
-    if not API_KEY:
-        return summary
+def ai_summary(title, summary):
+    if not OPENROUTER_API_KEY:
+        return summary[:SUMMARY_LENGTH]
 
     prompt = f"""
-You are an AI news editor.
-
-Summarize the following AI news in simple English.
-
-Rules:
-- Maximum 80 words.
-- Keep important facts.
-- Do not add fake information.
-- Return only the summary.
+Summarize this AI news article in simple English.
 
 Title:
 {title}
 
 Article:
 {summary}
+
+Rules:
+- Maximum {SUMMARY_LENGTH} characters.
+- Keep important facts.
+- No hashtags.
+- No markdown.
+- Easy to read.
 """
 
     headers = {
-        "Authorization": f"Bearer {API_KEY}",
+        "Authorization": f"Bearer {OPENROUTER_API_KEY}",
         "Content-Type": "application/json",
     }
 
     payload = {
-        "model": MODEL,
+        "model": OPENROUTER_MODEL,
         "messages": [
             {
                 "role": "user",
                 "content": prompt
             }
         ],
-        "temperature": 0.3,
-        "max_tokens": 180
+        "temperature": 0.4,
+        "max_tokens": 200
     }
 
     try:
         response = requests.post(
-            URL,
+            OPENROUTER_URL,
             headers=headers,
             json=payload,
-            timeout=60
+            timeout=30,
         )
 
         response.raise_for_status()
 
         data = response.json()
 
-        return data["choices"][0]["message"]["content"].strip()
+        text = data["choices"][0]["message"]["content"].strip()
+
+        return text
 
     except Exception as e:
         print("AI Error:", e)
-        return summary
+        return summary[:SUMMARY_LENGTH]
