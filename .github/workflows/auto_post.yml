@@ -8,6 +8,10 @@ on:
   schedule:
     - cron: "0 * * * *"
 
+concurrency:
+  group: ai-orbit-post
+  cancel-in-progress: true
+
 jobs:
   post:
     runs-on: ubuntu-latest
@@ -15,32 +19,41 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          persist-credentials: true
           fetch-depth: 0
+          persist-credentials: true
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Install Requirements
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
 
       - name: Run Bot
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHANNEL_USERNAME: ${{ secrets.CHANNEL_USERNAME }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-        run: python bot.py
+        run: |
+          python bot.py
 
       - name: Commit posted.json
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
 
+          git fetch origin main
+          git checkout main
           git pull --rebase origin main
 
           git add data/posted.json
 
-          git diff --staged --quiet || git commit -m "Update posted posts"
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
 
-          git push origin HEAD:main
+          git commit -m "Update posted posts"
+
+          git push origin main
