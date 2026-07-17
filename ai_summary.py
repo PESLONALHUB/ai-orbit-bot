@@ -9,16 +9,12 @@ from config import (
 
 
 def generate_summary(title, summary):
-    """
-    Generate an AI summary using OpenRouter.
-    Falls back to the RSS summary if anything goes wrong.
-    """
-
     if not OPENROUTER_API_KEY:
+        print("ERROR: OPENROUTER_API_KEY not found.")
         return summary[:SUMMARY_LENGTH]
 
     prompt = f"""
-Summarize this AI news article in simple, natural English.
+Summarize this AI news article in simple English.
 
 Title:
 {title}
@@ -27,16 +23,17 @@ Article:
 {summary}
 
 Rules:
-- Keep it under {SUMMARY_LENGTH} characters.
+- Maximum {SUMMARY_LENGTH} characters.
 - Mention only the important points.
-- Do not use markdown.
-- Do not use hashtags.
-- Write 2-4 short sentences.
+- No markdown.
+- No hashtags.
 """
 
     headers = {
         "Authorization": f"Bearer {OPENROUTER_API_KEY}",
         "Content-Type": "application/json",
+        "HTTP-Referer": "https://github.com/PESLONALHUB/ai-orbit-bot",
+        "X-Title": "AI Orbit Bot",
     }
 
     payload = {
@@ -44,7 +41,7 @@ Rules:
         "messages": [
             {
                 "role": "user",
-                "content": prompt
+                "content": prompt,
             }
         ],
         "temperature": 0.3,
@@ -59,18 +56,28 @@ Rules:
             timeout=30,
         )
 
-        response.raise_for_status()
+        print("OpenRouter Status:", response.status_code)
+
+        if response.status_code != 200:
+            print("OpenRouter Response:")
+            print(response.text)
+            return summary[:SUMMARY_LENGTH]
 
         data = response.json()
 
-        if "choices" in data and data["choices"]:
+        if (
+            "choices" in data
+            and data["choices"]
+            and "message" in data["choices"][0]
+        ):
             text = data["choices"][0]["message"]["content"].strip()
 
             if text:
                 return text[:SUMMARY_LENGTH]
 
+        print("Unexpected OpenRouter response:", data)
         return summary[:SUMMARY_LENGTH]
 
     except Exception as e:
-        print("OpenRouter Error:", e)
+        print("OpenRouter Exception:", str(e))
         return summary[:SUMMARY_LENGTH]
