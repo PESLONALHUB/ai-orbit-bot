@@ -2,6 +2,11 @@ import re
 
 from config import DEFAULT_HASHTAGS
 
+try:
+    from ai_summary import generate_summary
+except ImportError:
+    generate_summary = None
+
 
 def clean_text(text):
     if not text:
@@ -23,21 +28,31 @@ def short_summary(summary, limit=350):
 
 def format_post(post):
     title = clean_text(post.get("title", "Untitled"))
-    summary = short_summary(post.get("summary", "No summary available."))
+    rss_summary = short_summary(post.get("summary", "No summary available."))
     link = post.get("link", "")
+
+    summary = rss_summary
+
+    if generate_summary:
+        try:
+            ai = generate_summary(title, rss_summary)
+
+            if ai and len(ai.strip()) > 20:
+                summary = ai.strip()
+
+        except Exception as e:
+            print(f"AI Summary Error: {e}")
 
     hashtags = " ".join(DEFAULT_HASHTAGS)
 
-    message = f"""🚀 <b>AI Orbit</b>
+    return f"""🚀 <b>AI Orbit</b>
 
 📰 <b>{title}</b>
 
-📝 <b>Summary</b>
+📝 <b>AI Summary</b>
 {summary}
 
 🔗 <a href="{link}">Read Full Article</a>
 
 {hashtags}
-"""
-
-    return message.strip()
+""".strip()
