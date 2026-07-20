@@ -65,7 +65,7 @@ def main():
     for post in posts:
         try:
             formatted = format_post(post)
-
+            print("DEBUG:", formatted)
             caption = formatted.get("caption", "")
             image = formatted.get("image")
 
