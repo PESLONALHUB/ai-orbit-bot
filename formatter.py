@@ -1,5 +1,5 @@
 from urllib.parse import urlparse
-
+import re
 
 DEFAULT_HASHTAGS = "#AI #ArtificialIntelligence #ChatGPT #TechNews"
 
@@ -16,8 +16,6 @@ def clean_text(text):
         .replace("<br />", "\n")
     )
 
-    import re
-
     text = re.sub(r"<[^>]+>", "", text)
     text = re.sub(r"\s+", " ", text).strip()
 
@@ -30,30 +28,47 @@ def smart_summary(title, summary):
     if not summary:
         return title
 
-    sentences = summary.split(". ")
+    bad_phrases = [
+        "read more",
+        "continue reading",
+        "continue",
+        "advertisement",
+        "subscribe",
+        "sign up",
+        "newsletter",
+        "privacy policy",
+        "cookie",
+        "all rights reserved",
+        "copyright",
+    ]
 
-    result = []
+    sentences = []
 
-    for sentence in sentences:
+    for sentence in summary.replace("\n", " ").split("."):
         sentence = sentence.strip()
 
-        if len(sentence) < 20:
+        if len(sentence) < 30:
             continue
 
-        result.append(sentence)
+        lower = sentence.lower()
 
-        if len(result) == 2:
-            break
+        if any(word in lower for word in bad_phrases):
+            continue
 
-    if not result:
-        return summary[:220]
+        sentences.append(sentence)
 
-    text = ". ".join(result)
+    if not sentences:
+        return title
 
-    if len(text) > 220:
-        text = text[:220].rsplit(" ", 1)[0] + "..."
+    result = ". ".join(sentences[:2]).strip()
 
-    return text
+    if len(result) > 240:
+        result = result[:240].rsplit(" ", 1)[0] + "..."
+
+    if not result.endswith("."):
+        result += "."
+
+    return result
 
 
 def get_source(link):
@@ -64,12 +79,14 @@ def get_source(link):
             domain = domain[4:]
 
         return domain
+
     except Exception:
         return "Unknown"
 
 
 def format_post(post):
     title = clean_text(post.get("title", ""))
+
     summary = smart_summary(
         title,
         post.get("summary", ""),
@@ -81,12 +98,12 @@ def format_post(post):
 
 📰 <b>{title}</b>
 
-✨ <b>Summary</b>
+🧠 <b>Quick Summary</b>
 {summary}
 
 🌐 <b>Source:</b> {source}
 
-🔗 <a href="{post['link']}">Read Full Article</a>
+🔗 <a href="{post['link']}">Read Full Article →</a>
 
 {DEFAULT_HASHTAGS}
 """
