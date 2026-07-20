@@ -11,7 +11,7 @@ from config import (
 def generate_summary(title, summary):
     if not OPENROUTER_API_KEY:
         print("ERROR: OPENROUTER_API_KEY not found.")
-        return summary[:SUMMARY_LENGTH]
+        return None
 
     prompt = f"""
 Summarize this AI news article in simple English.
@@ -61,7 +61,7 @@ Rules:
         if response.status_code != 200:
             print("OpenRouter Response:")
             print(response.text)
-            return summary[:SUMMARY_LENGTH]
+            return None
 
         data = response.json()
 
@@ -76,8 +76,8 @@ Rules:
                 return text[:SUMMARY_LENGTH]
 
         print("Unexpected OpenRouter response:", data)
-        return summary[:SUMMARY_LENGTH]
+        return None
 
     except Exception as e:
         print("OpenRouter Exception:", str(e))
-        return summary[:SUMMARY_LENGTH]
+        return None

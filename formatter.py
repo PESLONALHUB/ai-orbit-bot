@@ -1,5 +1,6 @@
 from urllib.parse import urlparse
 import re
+from ai_summary import generate_summary
 
 DEFAULT_HASHTAGS = "#AI #ArtificialIntelligence #ChatGPT #TechNews"
 
@@ -86,11 +87,14 @@ def get_source(link):
 
 def format_post(post):
     title = clean_text(post.get("title", ""))
+    raw_summary = post.get("summary", "")
 
-    summary = smart_summary(
-        title,
-        post.get("summary", ""),
-    )
+    # Try AI summary first
+    summary = generate_summary(title, raw_summary)
+
+    # Fallback to smart summary if AI fails
+    if not summary:
+        summary = smart_summary(title, raw_summary)
 
     source = get_source(post.get("link", ""))
 
