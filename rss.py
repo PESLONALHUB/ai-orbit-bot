@@ -1,13 +1,13 @@
+import time
 import requests
 import feedparser
-import time
 
 from config import RSS_TIMEOUT, FEEDS_FILE, MAX_POSTS_PER_RUN
 from database import is_posted
 
 
 def load_feeds():
-    with open(FEEDS_FILE, "r") as f:
+    with open(FEEDS_FILE, "r", encoding="utf-8") as f:
         return [line.strip() for line in f if line.strip()]
 
 
@@ -19,6 +19,41 @@ def get_post_time(item):
         return time.mktime(item.updated_parsed)
 
     return 0
+
+
+def extract_image(item):
+    # media:content
+    media = item.get("media_content", [])
+    if media:
+        for m in media:
+            url = m.get("url")
+            if url:
+                return url
+
+    # media:thumbnail
+    thumb = item.get("media_thumbnail", [])
+    if thumb:
+        for t in thumb:
+            url = t.get("url")
+            if url:
+                return url
+
+    # enclosure image
+    for link in item.get("links", []):
+        href = link.get("href", "")
+        ltype = link.get("type", "")
+
+        if ltype.startswith("image") and href:
+            return href
+
+    # enclosures
+    if hasattr(item, "enclosures"):
+        for enc in item.enclosures:
+            href = enc.get("href")
+            if href:
+                return href
+
+    return None
 
 
 def get_latest_post():
@@ -41,6 +76,7 @@ def get_latest_post():
                 title = item.get("title", "").strip()
                 link = item.get("link", "").strip()
                 summary = item.get("summary", "").strip()
+                image = extract_image(item)
 
                 if not link:
                     continue
@@ -59,12 +95,15 @@ def get_latest_post():
 
                 seen.add(uid)
 
-                all_posts.append({
-                    "title": title,
-                    "link": link,
-                    "summary": summary,
-                    "published": get_post_time(item)
-                })
+                all_posts.append(
+                    {
+                        "title": title,
+                        "link": link,
+                        "summary": summary,
+                        "image": image,
+                        "published": get_post_time(item),
+                    }
+                )
 
         except Exception as e:
             print(f"RSS Error ({feed}): {e}")
@@ -74,7 +113,7 @@ def get_latest_post():
 
     all_posts.sort(
         key=lambda x: x["published"],
-        reverse=True
+        reverse=True,
     )
 
     unique_sources = set()
@@ -84,7 +123,7 @@ def get_latest_post():
 
         try:
             domain = post["link"].split("/")[2]
-        except:
+        except Exception:
             domain = post["link"]
 
         if domain in unique_sources:
