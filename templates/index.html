@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="row g-4 mb-4">
+  <div class="col-md-3">
+    <div class="card stat-card h-100">
+      <div class="card-body text-center">
+        <h6 class="text-muted">Version</h6>
+        <h3>{{ version }}</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card stat-card h-100">
+      <div class="card-body text-center">
+        <h6 class="text-muted">Last Run</h6>
+        <h3 style="font-size:1.1rem">{{ last_run or 'Never' }}</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card stat-card h-100">
+      <div class="card-body text-center">
+        <h6 class="text-muted">Queue</h6>
+        <h3>{{ queue_size }}</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="card stat-card h-100">
+      <div class="card-body text-center">
+        <h6 class="text-muted">Posted</h6>
+        <h3>{{ total_posted }}</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row g-4 mb-4">
+  <div class="col-md-4">
+    <div class="card stat-card h-100">
+      <div class="card-body text-center">
+        <h6 class="text-muted">Total Feeds</h6>
+        <h3>{{ total_feeds }}</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card stat-card h-100">
+      <div class="card-body text-center">
+        <h6 class="text-muted">Healthy</h6>
+        <h3 class="text-success">{{ healthy_feeds }}</h3>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card stat-card h-100">
+      <div class="card-body text-center">
+        <h6 class="text-muted">Disabled</h6>
+        <h3 class="text-danger">{{ disabled_feeds }}</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header"><i class="bi bi-gear"></i> Actions</div>
+  <div class="card-body">
+    <form method="POST" action="/run" style="display:inline">
+      <button class="btn btn-primary" type="submit"><i class="bi bi-play-fill"></i> Run Bot Now</button>
+    </form>
+    <form method="POST" action="/retry-feeds" style="display:inline">
+      <button class="btn btn-warning" type="submit"><i class="bi bi-arrow-clockwise"></i> Retry Disabled Feeds</button>
+    </form>
+    <form method="POST" action="/clear-queue" style="display:inline">
+      <button class="btn btn-danger" type="submit"><i class="bi bi-trash"></i> Clear Queue</button>
+    </form>
+    <a href="/export-logs" class="btn btn-secondary"><i class="bi bi-download"></i> Export Logs</a>
+  </div>
+</div>
+{% endblock %}

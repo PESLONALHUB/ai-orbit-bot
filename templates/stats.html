@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Statistics{% endblock %}
+{% block content %}
+<div class="row g-4">
+  <div class="col-md-6">
+    <div class="card stat-card h-100">
+      <div class="card-header"><i class="bi bi-graph-up"></i> Activity</div>
+      <div class="card-body">
+        <table class="table table-dark mb-0">
+          <tbody>
+            <tr><td>Posts Today</td><td class="text-end"><strong>{{ stats.posts_today }}</strong></td></tr>
+            <tr><td>Duplicate URLs Skipped</td><td class="text-end"><strong>{{ stats.duplicate_urls_skipped }}</strong></td></tr>
+            <tr><td>Duplicate Titles Skipped</td><td class="text-end"><strong>{{ stats.duplicate_titles_skipped }}</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card stat-card h-100">
+      <div class="card-header"><i class="bi bi-exclamation-triangle"></i> Errors</div>
+      <div class="card-body">
+        <table class="table table-dark mb-0">
+          <tbody>
+            <tr><td>OpenRouter Failures</td><td class="text-end"><strong>{{ stats.api_failures }}</strong></td></tr>
+            <tr><td>Telegram Failures</td><td class="text-end"><strong>{{ stats.telegram_failures }}</strong></td></tr>
+            <tr><td>RSS Failures</td><td class="text-end"><strong>{{ stats.rss_failures }}</strong></td></tr>
+            <tr><td>Retry Count</td><td class="text-end"><strong>{{ stats.retry_count }}</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

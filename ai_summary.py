@@ -1,3 +1,4 @@
+import re
 import requests
 
 from config import (
@@ -6,28 +7,80 @@ from config import (
     OPENROUTER_MODEL,
     SUMMARY_LENGTH,
 )
+from retry import retry_request
+from log import info, warning, error
+
+CATEGORIES = [
+    "OpenAI", "Google", "Anthropic", "Meta", "Microsoft",
+    "NVIDIA", "Research", "Robotics", "Coding", "Security",
+    "Startup", "Hardware", "Other",
+]
+
+
+def _parse_response(text):
+    result = {}
+    current_key = None
+
+    for line in text.strip().split("\n"):
+        line = line.strip()
+        lower = line.lower()
+        if lower.startswith("headline:"):
+            current_key = "headline"
+            result[current_key] = line.split(":", 1)[1].strip()
+        elif lower.startswith("summary:"):
+            current_key = "summary"
+            result[current_key] = line.split(":", 1)[1].strip()
+        elif lower.startswith("why it matters:"):
+            current_key = "why_it_matters"
+            result[current_key] = line.split(":", 1)[1].strip()
+        elif lower.startswith("category:"):
+            current_key = "category"
+            val = line.split(":", 1)[1].strip()
+            result[current_key] = val if val in CATEGORIES else "Other"
+        elif lower.startswith("emoji:"):
+            current_key = "emoji"
+            result[current_key] = line.split(":", 1)[1].strip()
+        elif lower.startswith("hashtags:"):
+            current_key = "hashtags_str"
+            result[current_key] = line.split(":", 1)[1].strip()
+        elif current_key and line:
+            result[current_key] += " " + line
+
+    required = ["headline", "summary", "why_it_matters", "category", "emoji", "hashtags_str"]
+    if all(k in result and result[k] for k in required):
+        summary_text = result["summary"]
+        if len(summary_text) > SUMMARY_LENGTH:
+            summary_text = summary_text[:SUMMARY_LENGTH].rsplit(" ", 1)[0] + "..."
+        return {
+            "headline": result["headline"],
+            "summary": summary_text,
+            "why_it_matters": result["why_it_matters"],
+            "category": result["category"],
+            "emoji": result["emoji"],
+            "hashtags_str": result["hashtags_str"],
+        }
+    return None
 
 
 def generate_summary(title, summary):
     if not OPENROUTER_API_KEY:
-        print("ERROR: OPENROUTER_API_KEY not found.")
+        error("OPENROUTER_API_KEY not found.")
         return None
 
-    prompt = f"""
-Summarize this AI news article in simple English.
+    prompt = f"""Analyze this AI news article and return structured data.
 
-Title:
-{title}
+Title: {title}
+Article: {summary}
 
-Article:
-{summary}
+Return exactly this format:
+Headline: <short engaging headline>
+Summary: <60-90 word summary>
+Why it matters: <one-line significance>
+Category: <one from: OpenAI, Google, Anthropic, Meta, Microsoft, NVIDIA, Research, Robotics, Coding, Security, Startup, Hardware, Other>
+Emoji: <single relevant emoji>
+Hashtags: <3-5 relevant hashtags>
 
-Rules:
-- Maximum {SUMMARY_LENGTH} characters.
-- Mention only the important points.
-- No markdown.
-- No hashtags.
-"""
+Plain text only, no markdown."""
 
     headers = {
         "Authorization": f"Bearer {OPENROUTER_API_KEY}",
@@ -45,22 +98,19 @@ Rules:
             }
         ],
         "temperature": 0.3,
-        "max_tokens": 180,
+        "max_tokens": 220,
     }
 
     try:
-        response = requests.post(
-            OPENROUTER_URL,
-            headers=headers,
-            json=payload,
-            timeout=30,
+        response = retry_request(
+            "POST", OPENROUTER_URL, max_attempts=2,
+            headers=headers, json=payload, timeout=30,
         )
 
-        print("OpenRouter Status:", response.status_code)
+        info("OpenRouter status: %s", response.status_code)
 
         if response.status_code != 200:
-            print("OpenRouter Response:")
-            print(response.text)
+            warning("OpenRouter failure (HTTP %s): %s", response.status_code, response.text)
             return None
 
         data = response.json()
@@ -73,11 +123,11 @@ Rules:
             text = data["choices"][0]["message"]["content"].strip()
 
             if text:
-                return text[:SUMMARY_LENGTH]
+                return _parse_response(text)
 
-        print("Unexpected OpenRouter response:", data)
+        warning("Unexpected OpenRouter response: %s", data)
         return None
 
     except Exception as e:
-        print("OpenRouter Exception:", str(e))
+        error("OpenRouter Exception: %s", e)
         return None

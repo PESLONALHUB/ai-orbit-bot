@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Feed Health{% endblock %}
+{% block content %}
+<div class="card">
+  <div class="card-header"><i class="bi bi-rss"></i> Feed Health ({{ feeds|length }} total)</div>
+  <div class="card-body p-0">
+    <div class="table-responsive">
+      <table class="table table-dark table-striped mb-0 align-middle">
+        <thead>
+          <tr>
+            <th>Status</th>
+            <th>Feed URL</th>
+            <th>Consecutive Failures</th>
+            <th>Last Success</th>
+            <th>Last Failure</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for f in feeds %}
+          <tr>
+            <td>
+              <span class="badge badge-{{ f.status }}">
+                {% if f.status == 'healthy' %}<i class="bi bi-check-circle"></i>
+                {% elif f.status == 'degraded' %}<i class="bi bi-exclamation-triangle"></i>
+                {% else %}<i class="bi bi-x-circle"></i>{% endif %}
+                {{ f.status }}
+              </span>
+            </td>
+            <td class="mono" style="max-width:500px; overflow:hidden; text-overflow:ellipsis">{{ f.url }}</td>
+            <td>{{ f.consecutive }}</td>
+            <td class="queue-ts">{{ f.last_success }}</td>
+            <td class="queue-ts">{{ f.last_failure }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}

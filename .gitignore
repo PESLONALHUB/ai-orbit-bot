@@ -1,2 +1,7 @@
 __pycache__/
-data/posted.json
+.venv/
+logs/
+data/queue.json
+data/stats.json
+data/health.json
+data/update_id.txt

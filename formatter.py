@@ -89,16 +89,34 @@ def format_post(post):
     title = clean_text(post.get("title", ""))
     raw_summary = post.get("summary", "")
 
-    # Try AI summary first
-    summary = generate_summary(title, raw_summary)
+    ai_result = generate_summary(title, raw_summary)
 
-    # Fallback to smart summary if AI fails
-    if not summary:
+    if isinstance(ai_result, dict):
+        headline = ai_result["headline"]
+        summary = ai_result["summary"]
+        why = ai_result["why_it_matters"]
+        category = ai_result["category"]
+        emoji = ai_result["emoji"]
+        hashtags = ai_result["hashtags_str"]
+
+        caption = f"""🚀 <b>AI Orbit</b>
+
+📰 <b>{headline}</b>
+
+{summary}
+
+💡 {why}
+
+{emoji} <b>{category}</b>
+
+{hashtags}
+
+🔗 <a href="{post['link']}">Read Full Article →</a>"""
+    else:
         summary = smart_summary(title, raw_summary)
+        source = get_source(post.get("link", ""))
 
-    source = get_source(post.get("link", ""))
-
-    caption = f"""🚀 <b>AI Orbit</b>
+        caption = f"""🚀 <b>AI Orbit</b>
 
 📰 <b>{title}</b>
 
@@ -109,8 +127,7 @@ def format_post(post):
 
 🔗 <a href="{post['link']}">Read Full Article →</a>
 
-{DEFAULT_HASHTAGS}
-"""
+{DEFAULT_HASHTAGS}"""
 
     return {
         "caption": caption,

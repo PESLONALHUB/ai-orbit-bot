@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Logs{% endblock %}
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    <i class="bi bi-journal-text"></i> Recent Logs (last 100 lines)
+    <a href="/export-logs" class="btn btn-secondary btn-sm" style="float:right">
+      <i class="bi bi-download"></i> Export
+    </a>
+  </div>
+  <div class="card-body p-0">
+    <pre class="mono p-3 mb-0" style="max-height:70vh; overflow-y:auto; background:#0d1117; color:#c9d1d9; font-size:.8em; line-height:1.5; white-space:pre-wrap">{{ logs }}</pre>
+  </div>
+</div>
+{% endblock %}
