@@ -5,7 +5,7 @@ import feedparser
 from urllib.parse import urlsplit, urlunsplit
 
 from config import RSS_TIMEOUT, FEEDS_FILE, MAX_POSTS_PER_RUN
-from database import is_posted, is_duplicate_title
+from database import is_posted, is_duplicate_title, normalize_url
 from retry import retry_request
 from feed_health import should_fetch, record_success, record_failure
 from log import info, warning, error
@@ -252,6 +252,19 @@ def extract_image(item):
         if e.get("href"):
             return e["href"]
     return None
+
+
+def load_feeds():
+    with open(FEEDS_FILE, "r", encoding="utf-8") as f:
+        return [line.strip() for line in f if line.strip()]
+
+
+def get_post_time(item):
+    if getattr(item, "published_parsed", None):
+        return time.mktime(item.published_parsed)
+    if getattr(item, "updated_parsed", None):
+        return time.mktime(item.updated_parsed)
+    return 0
 
 
 def get_latest_post():
