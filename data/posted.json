@@ -374,5 +374,17 @@
   {
     "url": "https://example.com/test",
     "title": "test title"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/07/25/meet-open-dreamer-a-jax-flax-reproduction-of-the-dreamer-4-world-model-pipeline-with-the-full-training-recipe-published",
+    "title": "meet open dreamer a jax flax reproduction of the dreamer 4 world model pipeline with the full training recipe published"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/get-started-with-openai-gpt-5-6-sol-terra-and-luna-on-amazon-bedrock",
+    "title": "get started with openai gpt 5 6 sol terra and luna on amazon bedrock"
+  },
+  {
+    "url": "https://techcrunch.com/2026/07/25/librarians-are-hosting-viral-avoiding-ai-workshops-for-people-who-are-fed-up-with-big-tech",
+    "title": "librarians are hosting viral avoiding ai workshops for people who are fed up with big tech"
   }
 ]
