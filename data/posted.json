@@ -438,5 +438,17 @@
   {
     "url": "https://openai.com/index/chatgpt-for-academic-researchers",
     "title": "accelerating scientific discovery with chatgpt for academic researchers"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-explicit-prompt-caching-for-openai-gpt-5-6-models-on-amazon-bedrock",
+    "title": "introducing explicit prompt caching for openai gpt 5 6 models on amazon bedrock"
+  },
+  {
+    "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+    "title": "advancing the price performance frontier with gpt 5 6"
+  },
+  {
+    "url": "https://www.analyticsvidhya.com/blog/2026/07/hidden-claude-code-cli-commands",
+    "title": "claude code cli commands i wish i had known sooner"
   }
 ]
