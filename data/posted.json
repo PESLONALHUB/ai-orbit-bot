@@ -498,5 +498,17 @@
   {
     "url": "https://openai.com/index/consensus",
     "title": "consensus accelerates research with gpt 5 and responses api"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/08/01/nvidia-ai-releases-molt-a-pytorch-native-agentic-reinforcement-learning-framework",
+    "title": "nvidia ai releases molt a pytorch native agentic reinforcement learning framework"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/08/01/supabase-releases-evals-an-open-source-benchmark-that-scores-claude-code-codex-and-opencode-on-real-supabase-tasks",
+    "title": "supabase releases evals an open source benchmark that scores claude code codex and opencode on real supabase tasks"
+  },
+  {
+    "url": "https://openai.com/index/introducing-gpt-5-2",
+    "title": "introducing gpt 5 2"
   }
 ]
