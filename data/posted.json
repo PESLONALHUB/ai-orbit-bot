@@ -538,5 +538,17 @@
   {
     "url": "https://engineering.fb.com/2026/08/03/ml-applications/training-gem-at-llm-scale-meta-ads-recommendation-foundation-model",
     "title": "gem training how meta doubled the efficiency of its llm scale ads foundation model"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/nsf-state-regional-ai-hub-program",
+    "title": "nvidia joins nsf state and regional ai hubs program to expand ai research and education across the us"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available",
+    "title": "nvidia alpamayo 2 super the frontier open model for robotaxis and autonomous vehicles now available for commercial use"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-web-search-on-amazon-bedrock-for-foundation-model-grounding",
+    "title": "introducing web search on amazon bedrock for foundation model grounding"
   }
 ]
