@@ -574,5 +574,17 @@
   {
     "url": "https://aws.amazon.com/blogs/machine-learning/how-we-built-an-mcp-bridge-to-give-our-agentcore-hosted-ai-agent-access-to-local-mcp-tools",
     "title": "how we built an mcp bridge to give our agentcore hosted ai agent access to local mcp tools"
+  },
+  {
+    "url": "https://www.analyticsvidhya.com/blog/2026/08/best-skills-claude-code-codex-cli",
+    "title": "top 10 skills for claude code and codex cli"
+  },
+  {
+    "url": "https://openai.com/index/hsp-gruppe",
+    "title": "how hsp gruppe builds ai capabilities for tax advisory"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/08/06/liquid-ai-lfm2-5-2-6b-on-device-agentic-model",
+    "title": "liquid ai releases lfm2 5 2 6b an on device agentic model with 128k context tool calling and open weights"
   }
 ]
