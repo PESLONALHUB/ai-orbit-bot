@@ -598,5 +598,17 @@
   {
     "url": "https://aws.amazon.com/blogs/machine-learning/determining-playoff-clinching-scenarios-in-the-nhl-using-constraint-programming",
     "title": "determining playoff clinching scenarios in the nhl using constraint programming"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/firebird-ai-factory-armenia-blackwell-rubin-dsx",
+    "title": "firebird launches cis region s largest ai factory in armenia"
+  },
+  {
+    "url": "https://www.analyticsvidhya.com/blog/2026/08/snowflake-ai-agents-semantic-governance",
+    "title": "building trustworthy snowflake ai agents with semantic governance"
+  },
+  {
+    "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+    "title": "improving gpt 5 6 sol in chatgpt and expanding access to gpt 5 6 luna for free users"
   }
 ]
