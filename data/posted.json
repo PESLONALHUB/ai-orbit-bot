@@ -706,5 +706,17 @@
   {
     "url": "https://openai.com/index/gpt-5-3-codex-system-card",
     "title": "gpt 5 3 codex system card"
+  },
+  {
+    "url": "https://www.zdnet.com/article/how-i-use-claude-cowork-record-a-skill-for-automated-research",
+    "title": "claude s record a skill cut my research from hours to 30 minutes but the magic has limits"
+  },
+  {
+    "url": "https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation",
+    "title": "making knowledge distillation cheap enough to run at scale"
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips",
+    "title": "discovered materials is playing ai whack a mole to hunt cooler chips"
   }
 ]
