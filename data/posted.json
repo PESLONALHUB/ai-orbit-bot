@@ -742,5 +742,17 @@
   {
     "url": "https://openai.com/index/building-an-ai-native-finance-function",
     "title": "what building an ai native finance function taught me"
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/10/metas-new-glimmer-ai-model-offers-a-hint-at-zuckerbergs-personal-intelligence-vision",
+    "title": "meta s new glimmer ai model offers a hint at zuckerberg s personal intelligence vision"
+  },
+  {
+    "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
+    "title": "build low latency multilingual voice agents open weights full deployment control with nvidia magpie tts"
+  },
+  {
+    "url": "https://news.mit.edu/2026/ai-models-simulate-wider-range-of-real-world-scenarios-0810",
+    "title": "with a feel for physics ai models simulate a wider range of real world scenarios"
   }
 ]
