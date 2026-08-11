@@ -766,5 +766,17 @@
   {
     "url": "https://www.marktechpost.com/2026/08/10/implementing-a-minimax-h3-multimodal-video-and-audio-generation-pipeline-with-comfyui-apis",
     "title": "implementing a minimax h3 multimodal video and audio generation pipeline with comfyui apis"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/local-ai-open-source-models-agents-nemotron",
+    "title": "nvidia and local ai community fuel open source models and intelligent agents"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/nemotron-lightning-switchyard-rtx-dgx",
+    "title": "nvidia nemotron 3 5 lightning and nemo switchyard deliver faster smarter more efficient agentic ai"
+  },
+  {
+    "url": "https://www.analyticsvidhya.com/blog/2026/08/claude-ai-watermarking-explained",
+    "title": "claude now watermarks everything it makes"
   }
 ]
