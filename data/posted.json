@@ -778,5 +778,17 @@
   {
     "url": "https://www.analyticsvidhya.com/blog/2026/08/claude-ai-watermarking-explained",
     "title": "claude now watermarks everything it makes"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/deploying-anthropic-claude-apps-gateway-for-aws-for-enterprise-workloads",
+    "title": "deploying anthropic claude apps gateway for aws for enterprise workloads"
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems",
+    "title": "an unreleased anthropic model made progress on one of math s biggest unsolved problems"
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users",
+    "title": "google s gemini app surges to one billion users"
   }
 ]
