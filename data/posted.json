@@ -862,5 +862,17 @@
   {
     "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
     "title": "introducing olmoearth embeddings custom embedding exports from olmoearth studio for downstream analysis"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/08/12/allenai-open-instruct-tulu-3-post-training-with-sft-dpo-rlvr-grpo-and-verifier-based-evaluation",
+    "title": "allenai open instruct tulu 3 post training with sft dpo rlvr grpo and verifier based evaluation"
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open",
+    "title": "as ai safety concerns mount three pioneers make the case for staying open"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/part-2-amazon-bedrock-cost-attribution-with-amazon-athena-and-cudos",
+    "title": "part 2 amazon bedrock cost attribution with amazon athena and cudos"
   }
 ]
