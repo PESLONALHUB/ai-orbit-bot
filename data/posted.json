@@ -826,5 +826,17 @@
   {
     "url": "https://blogs.nvidia.com/blog/nvidia-ai-factory-compute",
     "title": "nvidia ai factory compute is becoming an investable asset class"
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/12/blacksmiths-valuation-jumps-10x-to-550m-as-ai-coding-fuels-software-validation",
+    "title": "ai code testing startup blacksmith s valuation jumps almost 10x in less than a year"
+  },
+  {
+    "url": "https://www.analyticsvidhya.com/blog/2026/08/why-you-shouldnt-trust-llm-judges",
+    "title": "why you shouldn t always trust llms as judges understanding bias in automated evaluation"
+  },
+  {
+    "url": "https://openai.com/index/how-enterprises-put-ai-to-work",
+    "title": "from assistance to execution how enterprises put ai to work"
   }
 ]
