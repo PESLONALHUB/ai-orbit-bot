@@ -814,5 +814,17 @@
   {
     "url": "https://aws.amazon.com/blogs/machine-learning/how-onestruction-built-the-ishigaki-ids-foundation-model-with-aws-genaiic",
     "title": "how onestruction built the ishigaki ids foundation model with aws genaiic"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/08/11/nvidia-ai-releases-nemotron-3-5-lightning-and-nemo-switchyard",
+    "title": "nvidia ai releases nemotron 3 5 lightning a 30b open moe with 3b active parameters and nemo switchyard model router"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/08/11/xiaomis-milm-plus-releases-prove-perception-aligned-object-removal-metrics-rc-s-and-rc-t-with-a-real-world-video-benchmark",
+    "title": "xiaomi s milm plus releases prove perception aligned object removal metrics rc s and rc t with a real world video benchmark"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/nvidia-ai-factory-compute",
+    "title": "nvidia ai factory compute is becoming an investable asset class"
   }
 ]
