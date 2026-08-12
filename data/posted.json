@@ -850,5 +850,17 @@
   {
     "url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise",
     "title": "openai backed thrive holdings raises 2b to bring ai to the enterprise"
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/12/how-a-250-million-acquisition-collapsed-into-allegations-of-fraud-and-forged-signatures",
+    "title": "how a 250 million acquisition collapsed into allegations of fraud and forged signatures"
+  },
+  {
+    "url": "https://techcrunch.com/video/why-stream-ring-maker-sandbar-says-the-future-of-ai-wearables-is-voice",
+    "title": "why stream ring maker sandbar says the future of ai wearables is voice"
+  },
+  {
+    "url": "https://huggingface.co/blog/allenai/olmoearth-embeddings",
+    "title": "introducing olmoearth embeddings custom embedding exports from olmoearth studio for downstream analysis"
   }
 ]
