@@ -910,5 +910,17 @@
   {
     "url": "https://aws.amazon.com/blogs/machine-learning/amazon-quick-for-microsoft-365-agentic-ai-where-you-work",
     "title": "amazon quick for microsoft 365 agentic ai where you work"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/08/13/google-ai-just-released-gemini-3-7-flash",
+    "title": "google ai just released gemini 3 7 flash a coding and agent model at 0 75 1m input tokens"
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed",
+    "title": "openai introduces ultrafast a new mode that makes gpt 5 6 sol work at 14x the speed"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/08/13/liquid-ai-lfm2-5-vl-3b-on-device-vision-language-model",
+    "title": "liquid ai releases lfm2 5 vl 3b a 3b vision language model that reads screens grounds objects and calls tools on device"
   }
 ]
