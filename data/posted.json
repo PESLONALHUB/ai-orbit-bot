@@ -874,5 +874,17 @@
   {
     "url": "https://aws.amazon.com/blogs/machine-learning/part-2-amazon-bedrock-cost-attribution-with-amazon-athena-and-cudos",
     "title": "part 2 amazon bedrock cost attribution with amazon athena and cudos"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/08/12/spacexai-releases-grok-4-6",
+    "title": "spacexai releases grok 4 6 a 500k context frontier model tuned for long running agents coding and knowledge work"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/08/13/dyna-robotics-introduces-dyna-2-a-world-action-model-pre-trained-on-1-million-hours-of-human-video",
+    "title": "dyna robotics introduces dyna 2 a world action model pre trained on 1 million hours of human video"
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/12/some-claude-users-are-mad-that-anthropics-new-watermarks-will-catch-them-cheating-at-their-jobs-classes",
+    "title": "some claude users are mad that anthropic s new watermarks will catch them using it at their jobs classes"
   }
 ]
