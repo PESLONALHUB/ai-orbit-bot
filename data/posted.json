@@ -934,5 +934,17 @@
   {
     "url": "https://blog.google/products-and-platforms/products/workspace/sheets-canvas-for-google-sheets-spreadsheets",
     "title": "bring your spreadsheet data to life with sheets canvas"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/08/14/z-ai-ships-glm-5-3-without-retraining-the-base-model-better-at-complex-coding-and-long-horizon-tasks",
+    "title": "z ai ships glm 5 3 without retraining the base model better at complex coding and long horizon tasks"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/08/13/a-practical-guide-to-streaming-curating-and-fine-tuning-the-supralabs-reasoning-corpus",
+    "title": "create a reasoning focused llm a practical guide to streaming curating and fine tuning the supralabs reasoning corpus"
+  },
+  {
+    "url": "https://www.zdnet.com/article/dicio-free-android-assistant-gemini-keeps-data-private",
+    "title": "this free android assistant fixes my biggest gemini frustration and keeps my data private"
   }
 ]
