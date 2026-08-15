@@ -1042,5 +1042,17 @@
   {
     "url": "https://www.zdnet.com/article/victrola-soundstage-review",
     "title": "no space for bookshelf speakers the victrola soundstage sits neatly under my turntable"
+  },
+  {
+    "url": "https://openai.com/index/gpt-5-immunology-mystery",
+    "title": "how gpt 5 helped immunologist derya unutmaz solve a 3 year old mystery"
+  },
+  {
+    "url": "https://openai.com/index/databricks",
+    "title": "databricks brings gpt 5 5 to enterprise agent workflows"
+  },
+  {
+    "url": "https://research.google/blog/accelerating-gemini-nano-models-on-pixel-with-frozen-multi-token-prediction",
+    "title": "accelerating gemini nano models on pixel with frozen multi token prediction"
   }
 ]
