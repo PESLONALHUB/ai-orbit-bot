@@ -1006,5 +1006,17 @@
   {
     "url": "https://blogs.cisco.com/partner/how-identity-drives-msp-profitability-an-analysts-perspective",
     "title": "how identity drives msp profitability an analyst s perspective"
+  },
+  {
+    "url": "https://openai.com/index/gpt-5-1-codex-max",
+    "title": "building more with gpt 5 1 codex max"
+  },
+  {
+    "url": "https://openai.com/index/gpt-5-1-for-developers",
+    "title": "introducing gpt 5 1 for developers"
+  },
+  {
+    "url": "https://research.google/blog/towards-better-health-conversations-research-insights-on-a-wayfinding-ai-agent-based-on-gemini",
+    "title": "towards better health conversations research insights on a wayfinding ai agent based on gemini"
   }
 ]
