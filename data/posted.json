@@ -1150,5 +1150,17 @@
   {
     "url": "https://openai.com/index/gpt-5-new-era-of-work",
     "title": "gpt 5 and the new era of work"
+  },
+  {
+    "url": "https://openai.com/index/gpt-5-coding-design",
+    "title": "coding and design with gpt 5"
+  },
+  {
+    "url": "https://openai.com/index/gpt-5-first-look",
+    "title": "first look at gpt 5"
+  },
+  {
+    "url": "https://research.google/blog/unlocking-dependable-responses-with-gemini-enterprise-agent-platforms-agentic-rag",
+    "title": "unlocking dependable responses with gemini enterprise agent platform s agentic rag"
   }
 ]
