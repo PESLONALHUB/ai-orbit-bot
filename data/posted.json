@@ -1126,5 +1126,17 @@
   {
     "url": "https://www.langchain.com/blog/what-is-an-agent",
     "title": "what is an ai agent"
+  },
+  {
+    "url": "https://openai.com/index/gpt-5-1",
+    "title": "gpt 5 1 a smarter more conversational chatgpt"
+  },
+  {
+    "url": "https://openai.com/index/gpt-5-system-card-sensitive-conversations",
+    "title": "addendum to gpt 5 system card sensitive conversations"
+  },
+  {
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api",
+    "title": "expanding managed agents in gemini api background tasks remote mcp and more"
   }
 ]
