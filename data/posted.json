@@ -1234,5 +1234,17 @@
   {
     "url": "https://techcrunch.com/2026/08/17/amazon-once-an-online-bookseller-is-destroying-rare-books-to-train-ai-models",
     "title": "amazon which started off selling books is destroying rare texts to train ai"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/08/17/minimax-releases-minimax-music3",
+    "title": "minimax releases minimax music3 an open weights music model generating complete five minute songs from lyrics and a structured caption"
+  },
+  {
+    "url": "https://www.analyticsvidhya.com/blog/2026/08/kimi-k3-features",
+    "title": "7 kimi k3 features that make every other model feel outdated"
+  },
+  {
+    "url": "https://huggingface.co/blog/Dharma-AI/gpu-management-pt2",
+    "title": "same cluster 33 points more utilization what changed was the order"
   }
 ]
