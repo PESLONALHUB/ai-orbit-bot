@@ -1318,5 +1318,17 @@
   {
     "url": "https://aws.amazon.com/blogs/machine-learning/how-axonius-built-secure-multi-tenant-ai-agents-on-bedrock-agentcore",
     "title": "how axonius built secure multi tenant ai agents on bedrock agentcore"
+  },
+  {
+    "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
+    "title": "strengthening democratic oversight in national security"
+  },
+  {
+    "url": "https://news.mit.edu/2026/when-ai-art-has-no-author-generated-images-often-cant-be-traced-to-training-data-0818",
+    "title": "when ai art has no author study finds generated images often can t be traced to training data"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/implement-vector-prompt-document-classification-using-amazon-bedrock",
+    "title": "implement vector prompt document classification using amazon bedrock"
   }
 ]
