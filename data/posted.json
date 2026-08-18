@@ -1306,5 +1306,17 @@
   {
     "url": "https://www.marktechpost.com/2026/08/18/cartesia-ships-sonic-3-6-a-streaming-tts-model-that-now-leads-both-artificial-analysis-speech-arenas",
     "title": "cartesia ships sonic 3 6 a streaming tts model that now leads both artificial analysis speech arenas"
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/18/openai-institutes-new-safeguards-after-hugging-face-breach",
+    "title": "openai institutes new safeguards after hugging face breach"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to-transact-safely-and-autonomously-at-scale",
+    "title": "amazon bedrock agentcore payments is now generally available enabling agents to transact safely and autonomously at scale"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/how-axonius-built-secure-multi-tenant-ai-agents-on-bedrock-agentcore",
+    "title": "how axonius built secure multi tenant ai agents on bedrock agentcore"
   }
 ]
