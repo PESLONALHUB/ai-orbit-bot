@@ -1330,5 +1330,17 @@
   {
     "url": "https://aws.amazon.com/blogs/machine-learning/implement-vector-prompt-document-classification-using-amazon-bedrock",
     "title": "implement vector prompt document classification using amazon bedrock"
+  },
+  {
+    "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+    "title": "how much memory does your agent actually need"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/customize-amazon-quick-embedded-chat-into-your-application",
+    "title": "customize amazon quick embedded chat into your application"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/how-jumio-built-a-real-time-feature-store-on-aws",
+    "title": "how jumio built a real time feature store on aws"
   }
 ]
