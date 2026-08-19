@@ -1342,5 +1342,17 @@
   {
     "url": "https://aws.amazon.com/blogs/machine-learning/how-jumio-built-a-real-time-feature-store-on-aws",
     "title": "how jumio built a real time feature store on aws"
+  },
+  {
+    "url": "https://www.analyticsvidhya.com/blog/2026/08/how-to-remove-claude-watermarks",
+    "title": "how to remove claude watermarks from text code and files"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/08/18/nvidia-releases-tensorrt-model-connect-in-public-preview-hugging-face-checkpoint-to-native-c-inference-in-two-commands",
+    "title": "nvidia releases tensorrt model connect in public preview hugging face checkpoint to native c inference in two commands"
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/18/cursor-capitalizes-on-github-frustration-launches-rival-hosting-platform",
+    "title": "cursor capitalizes on github frustration launches rival hosting platform"
   }
 ]
