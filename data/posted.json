@@ -1366,5 +1366,17 @@
   {
     "url": "https://www.zdnet.com/article/top-6-ai-free-linux-distros",
     "title": "the 6 ai free linux distros i recommend most and why they re likely to stay that way"
+  },
+  {
+    "url": "https://huggingface.co/blog/LiquidAI/qad",
+    "title": "lfm2 5 q4 0 checkpoints from quantization aware distillation"
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/19/relativity-networks-raises-22-million-to-bring-a-faster-kind-of-fiber-to-data-centers",
+    "title": "relativity networks raises 22 million to bring a faster kind of fiber to data centers"
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/19/ai-isnt-close-to-curing-cancer-this-startup-says-it-knows-what-it-will-take",
+    "title": "ai isn t close to curing cancer this startup says it knows what it will take"
   }
 ]
