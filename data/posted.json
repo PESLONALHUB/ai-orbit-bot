@@ -1438,5 +1438,17 @@
   {
     "url": "https://aws.amazon.com/blogs/machine-learning/automate-document-processing-with-quick-automate-and-the-idp-accelerator",
     "title": "automate document processing with quick automate and the idp accelerator"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/08/20/auditing-preference-biases-and-fine-tuning-language-models-with-direct-preference-optimization-on-anthropic-hh-rlhf-using-trl-and-lora",
+    "title": "auditing preference biases and fine tuning language models with direct preference optimization on anthropic hh rlhf using trl and lora"
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users",
+    "title": "binance now lets ai agents trade but keeping them in check is largely up to users"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/asynchronous-patterns-for-calling-amazon-bedrock-agentcore-agents-in-serverless-pipelines",
+    "title": "asynchronous patterns for calling amazon bedrock agentcore agents in serverless pipelines"
   }
 ]
