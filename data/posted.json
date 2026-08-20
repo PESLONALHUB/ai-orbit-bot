@@ -1426,5 +1426,17 @@
   {
     "url": "https://techcrunch.com/2026/08/19/terrapowers-nuclear-reactor-has-a-secret-weapon-for-powering-ai-data-centers",
     "title": "terrapower s nuclear reactor has a secret weapon for powering ai data centers"
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/19/openai-seeks-to-one-up-anthropic-with-new-customer-privacy-protections",
+    "title": "openai seeks to one up anthropic with new customer privacy protections"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/domain-and-publish-date-filters-for-web-search-on-agentcore",
+    "title": "domain and publish date filters for web search on agentcore"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/automate-document-processing-with-quick-automate-and-the-idp-accelerator",
+    "title": "automate document processing with quick automate and the idp accelerator"
   }
 ]
