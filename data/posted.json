@@ -1498,5 +1498,17 @@
   {
     "url": "https://aws.amazon.com/blogs/machine-learning/scaling-cloud-migrations-with-agentic-ai-on-amazon-bedrock-agentcore",
     "title": "scaling cloud migrations with agentic ai on amazon bedrock agentcore"
+  },
+  {
+    "url": "https://pytorch.org/blog/pytorch-conference-north-america-2026-keynote-speaker-sessions-announced",
+    "title": "pytorch conference north america 2026 keynote speaker sessions announced"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/build-a-no-code-ml-workflow-with-snowflake-amazon-sagemaker-canvas-and-amazon-quick-part-2-data-preparation-and-model-building-with-amazon-sagemaker-canvas",
+    "title": "build a no code ml workflow with snowflake amazon sagemaker canvas and amazon quick part 2 data preparation and model building with amazon sagemaker canvas"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/aws-vector-solutions-build-agentic-ai-where-your-data-lives",
+    "title": "aws vector solutions build agentic ai where your data lives"
   }
 ]
