@@ -1558,5 +1558,17 @@
   {
     "url": "https://www.zdnet.com/article/china-drops-windows-for-linux",
     "title": "china joins europe in scrapping windows for linux"
+  },
+  {
+    "url": "https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data",
+    "title": "an ai tool for prioritizing candidate biomarkers from wearable sensor data"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/accelerating-aircraft-ifec-diagnostics-with-agentic-ai-on-aws",
+    "title": "accelerating aircraft ifec diagnostics with agentic ai on aws"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-tool-access-with-amazon-bedrock-agentcore-gateway",
+    "title": "govern ai agent tool access with amazon bedrock agentcore gateway"
   }
 ]
