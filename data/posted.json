@@ -1510,5 +1510,17 @@
   {
     "url": "https://aws.amazon.com/blogs/machine-learning/aws-vector-solutions-build-agentic-ai-where-your-data-lives",
     "title": "aws vector solutions build agentic ai where your data lives"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-cross-region-inference-for-openai-gpt-5-6-models-on-amazon-bedrock",
+    "title": "introducing cross region inference for openai gpt 5 6 models on amazon bedrock"
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates",
+    "title": "openai is gaining on anthropic with business users new data indicates"
+  },
+  {
+    "url": "https://www.eetimes.com/the-human-brain-versus-ai-similar-results-very-different-machines",
+    "title": "the human brain versus ai similar results very different machines"
   }
 ]
