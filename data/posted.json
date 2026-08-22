@@ -1606,5 +1606,17 @@
   {
     "url": "https://openai.com/index/gpt-5-creative-writing",
     "title": "creative writing with gpt 5"
+  },
+  {
+    "url": "https://www.zdnet.com/article/google-pixel-tag-ultra-wideband-bluetooth-channel-sounding",
+    "title": "google s new pixel tag tracker has a big advantage over airtags and they cost the same"
+  },
+  {
+    "url": "https://openai.com/index/gpt-5-amgen",
+    "title": "how amgen uses gpt 5"
+  },
+  {
+    "url": "https://openai.com/index/gpt-5-cursor",
+    "title": "how cursor uses gpt 5"
   }
 ]
