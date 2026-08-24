@@ -1834,5 +1834,17 @@
   {
     "url": "https://aws.amazon.com/blogs/machine-learning/ai-powered-metadata-correction-and-harmonization",
     "title": "ai powered metadata correction and harmonization"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/nvlink-fusion-xpu-ai-factory",
+    "title": "how xpus meet a world class ai factory"
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them",
+    "title": "openai is building ai agents for everything will everyone use them"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-new-ray-capabilities-on-sagemaker-hyperpod",
+    "title": "introducing new ray capabilities on sagemaker hyperpod"
   }
 ]
