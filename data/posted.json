@@ -1846,5 +1846,17 @@
   {
     "url": "https://aws.amazon.com/blogs/machine-learning/introducing-new-ray-capabilities-on-sagemaker-hyperpod",
     "title": "introducing new ray capabilities on sagemaker hyperpod"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/building-a-restaurant-telephony-ai-host-with-amazon-connect",
+    "title": "building a restaurant telephony ai host with amazon connect"
+  },
+  {
+    "url": "https://engineering.fb.com/2026/08/24/networking-traffic/mtia-300-meta-training-chip-built-in-nics",
+    "title": "mtia 300 meta s first training chip with built in nics and communication offloading engines"
+  },
+  {
+    "url": "https://openai.com/index/gpt-5-6-in-kiro",
+    "title": "advancing price performance for developers with gpt 5 6 in kiro"
   }
 ]
