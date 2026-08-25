@@ -1930,5 +1930,17 @@
   {
     "url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding",
     "title": "stability ai maker of image generator stable diffusion raises 76 million in fresh funding"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/08/25/perplexity-ships-portable-computer-on-nvidia-dgx-spark-local-harness-os-enforced-sandbox-and-zero-per-token-cost-for-local-steps",
+    "title": "perplexity ships portable computer on nvidia dgx spark local harness os enforced sandbox and zero per token cost for local steps"
+  },
+  {
+    "url": "https://research.google/blog/agenthands-generating-interactive-hand-gestures-for-spatially-grounded-agent-conversations-in-xr",
+    "title": "agenthands generating interactive hand gestures for spatially grounded agent conversations in xr"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/agentic-observability-with-amazon-opensearch-service-mcp-apps",
+    "title": "agentic observability with amazon opensearch service mcp apps"
   }
 ]
