@@ -1894,5 +1894,17 @@
   {
     "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
     "title": "quantization aware healing a compressed 4 bit model that outperforms its full precision original"
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/25/openais-jalapeno-chip-is-built-for-fast-inference-at-scale-benchmarks-show",
+    "title": "openai s jalape o chip is built for fast inference at scale benchmarks show"
+  },
+  {
+    "url": "https://machinelearningmastery.com/comparing-local-tool-calling-gemma-4-vs-llama-3-vs-mistral",
+    "title": "comparing local tool calling gemma 4 vs llama 3 vs mistral"
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/25/accel-backed-keenable-is-indexing-the-web-for-ai-agents",
+    "title": "accel backed keenable is indexing the web for ai agents"
   }
 ]
