@@ -1882,5 +1882,17 @@
   {
     "url": "https://huggingface.co/blog/gradio-workflow-guide",
     "title": "wire it run it deploy it ai workflows in gradio"
+  },
+  {
+    "url": "https://www.eetimes.com/yokogawa-releases-ct500sa-and-ct200sa-ac-dc-split-core-current-sensors",
+    "title": "yokogawa releases ct500sa and ct200sa ac dc split core current sensors"
+  },
+  {
+    "url": "https://techcrunch.com/2026/08/25/the-world-seems-to-be-ready-an-interview-with-openai-head-of-product-thibault-sottiaux",
+    "title": "the world seems to be ready an interview with openai head of product thibault sottiaux"
+  },
+  {
+    "url": "https://huggingface.co/blog/MultiverseComputingCAI/quantization-aware-healing",
+    "title": "quantization aware healing a compressed 4 bit model that outperforms its full precision original"
   }
 ]
