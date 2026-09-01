@@ -2074,5 +2074,17 @@
   {
     "url": "https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting",
     "title": "timesfm 3 a zero shot foundation model for multivariate forecasting"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/08/31/gradium-ai-releases-new-default-tts-model-81-0-hard-case-pass-rate-at-216-ms-time-to-first-audio",
+    "title": "gradium ai releases new default tts model 81 0 hard case pass rate at 216 ms time to first audio"
+  },
+  {
+    "url": "https://www.analyticsvidhya.com/blog/2026/09/best-local-llms-mac-mini-2026",
+    "title": "5 best local llms you can run on a mac mini in 2026"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/08/31/google-ai-releases-timesfm-3-a-330m-parameter-zero-shot-foundation-model-for-multivariate-time-series-forecasting",
+    "title": "google ai releases timesfm 3 a 330m parameter zero shot foundation model for multivariate time series forecasting"
   }
 ]
