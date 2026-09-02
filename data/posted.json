@@ -2098,5 +2098,17 @@
   {
     "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-1-on-aws",
     "title": "introducing claude fable 5 1 on aws"
+  },
+  {
+    "url": "https://techcrunch.com/2026/09/01/open-ais-astra-model-is-on-the-way-and-very-good-at-breaking-into-computer-systems",
+    "title": "openai s astra model is on the way and very good at breaking into computer systems"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/09/01/meta-superintelligence-labs-releases-muse-voice-transcribe-one-real-time-model-for-streaming-asr-diarization-and-endpointing",
+    "title": "meta superintelligence labs releases muse voice transcribe one real time model for streaming asr diarization and endpointing"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/09/01/perplexity-releases-hybrid-compute-on-mac-cloud-agents-orchestrate-down-to-a-local-model-gated-on-device",
+    "title": "perplexity releases hybrid compute on mac cloud agents orchestrate down to a local model gated on device"
   }
 ]
