@@ -2158,5 +2158,17 @@
   {
     "url": "https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion",
     "title": "nvidia confirms it will buy hugging face for 12 9 billion"
+  },
+  {
+    "url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model",
+    "title": "openai launches astra its powerful and controversial new model"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/set-up-openai-chatgpt-codex-with-litellm-on-amazon-ecs-and-amazon-bedrock",
+    "title": "set up openai chatgpt codex with litellm on amazon ecs and amazon bedrock"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark",
+    "title": "sparks fly nvidia accelerates local ai at ifa 2026"
   }
 ]
