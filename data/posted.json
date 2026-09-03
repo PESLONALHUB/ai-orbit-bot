@@ -2134,5 +2134,17 @@
   {
     "url": "https://aws.amazon.com/blogs/machine-learning/modernizing-and-scaling-support-operations-with-generative-ai-on-aws",
     "title": "modernizing and scaling support operations with generative ai on aws"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/09/02/google-deepmind-releases-gemini-3-8-flash-and-gemini-3-8-flash-cyber-one-core-model-two-access-envelopes",
+    "title": "google deepmind releases gemini 3 8 flash and gemini 3 8 flash cyber one core model two access envelopes"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/09/02/perplexity-open-sources-lily-a-rust-metal-inference-engine-for-qwen3-6-35b-a3b-on-apple-silicon",
+    "title": "perplexity open sources lily a rust metal inference engine for qwen3 6 35b a3b on apple silicon"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/accessing-openai-gpt-5-6-models-on-amazon-bedrock-from-australia-with-global-cross-region-inference",
+    "title": "accessing openai models on amazon bedrock from australia with global cross region inference"
   }
 ]
