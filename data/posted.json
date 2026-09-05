@@ -2214,5 +2214,17 @@
   {
     "url": "https://www.marktechpost.com/2026/09/04/google-agentic-video-understanding-gemini-flash-models",
     "title": "google launches agentic video understanding for gemini flash models cutting video tokens by up to 88"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/09/04/nvidia-releases-personal-ai-router-pair-an-open-source-virtual-inference-router-that-distributes-local-ai-requests-across-rtx-dgx-spark-and-mac-nodes",
+    "title": "nvidia releases personal ai router pair an open source virtual inference router that distributes local ai requests across rtx dgx spark and mac nodes"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/09/04/datasets-invent-api-training-data-without-labeling-adaptive-data-autoscientist",
+    "title": "adaption labs introduces invent a dataset training data generated from a task description not a seed corpus"
+  },
+  {
+    "url": "https://www.analyticsvidhya.com/blog/2026/09/gpt-6-astra-explained",
+    "title": "gpt 6 astra what s actually new in openai s new frontier model"
   }
 ]
