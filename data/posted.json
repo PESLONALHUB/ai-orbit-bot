@@ -2298,5 +2298,17 @@
   {
     "url": "https://www.eetimes.com/nvidia-acquires-huggingface-for-12-9b",
     "title": "nvidia acquires huggingface for 12 9b"
+  },
+  {
+    "url": "https://openai.com/index/codex-quantum-computing-experiments",
+    "title": "how gpt 5 6 sol helps run quantum computing experiments"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/09/08/nvidia-announces-cuda-rust-with-cuda-oxide-simt-and-cutile-rs-tile-for-compile-time-safe-gpu-kernels",
+    "title": "nvidia announces cuda rust with cuda oxide simt and cutile rs tile for compile time safe gpu kernels"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/09/08/google-deepmind-releases-alphagenome-atlas-with-precomputed-molecular-effect-predictions-and-avi-scores-for-9-billion-human-dna-variants",
+    "title": "google deepmind releases alphagenome atlas with precomputed molecular effect predictions and avi scores for 9 billion human dna variants"
   }
 ]
