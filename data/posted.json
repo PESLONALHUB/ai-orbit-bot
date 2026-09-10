@@ -2358,5 +2358,17 @@
   {
     "url": "https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors",
     "title": "openai adds a prominent ai doomer to its board of directors"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/09/10/deepseek-ai-released-deepseek-v4-1-flash-with-1m-context-fp4-kv-cache-and-cross-layer-attention-reuse",
+    "title": "deepseek ai released deepseek v4 1 flash with 1m context fp4 kv cache and cross layer attention reuse"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-wardogs",
+    "title": "boots on the ground wardogs goes all out on geforce now at early access launch"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/d-matrix-nvlink-fusion",
+    "title": "d matrix adopts nvidia nvlink fusion for rack scale xpu deployment"
   }
 ]
