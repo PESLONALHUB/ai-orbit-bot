@@ -2394,5 +2394,17 @@
   {
     "url": "https://www.eetimes.com/indian-researchers-look-beyond-gpus-to-neuromorphic-ai-hardware",
     "title": "indian researchers look beyond gpus to neuromorphic ai hardware"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/09/10/cohere-releases-north-small-translate-a-218b-moe-translation-model-that-scores-83-6-on-wmt26-across-50-languages",
+    "title": "cohere releases north small translate a 218b moe translation model that scores 83 6 on wmt26 across 50 languages"
+  },
+  {
+    "url": "https://machinelearningmastery.com/fine-tuning-agentic-ai-a-practical-guide",
+    "title": "fine tuning agentic ai a practical guide"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai",
+    "title": "skild ai taps nvidia physical ai to teach robots new tasks from a single video"
   }
 ]
