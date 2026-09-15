@@ -2466,5 +2466,17 @@
   {
     "url": "https://techcrunch.com/2026/09/14/only-at-techcrunch-disrupt-2026-what-happens-when-openai-ships-your-roadmap",
     "title": "only at techcrunch disrupt 2026 what happens when openai ships your roadmap"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/childrens-hospital-open-source-ai-cardiac-care",
+    "title": "heart of the matter how a major children s hospital uses open source nvidia ai for cardiac care"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/09/14/meta-introduces-zgateway-a-stateless-proxy-tier-that-unifies-zippydb-traffic-and-handles-over-1-billion-operations-per-second",
+    "title": "meta introduces zgateway a stateless proxy tier that unifies zippydb traffic and handles over 1 billion operations per second"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/09/14/agent-net-open-sources-webagent-a-go-harness-that-turns-any-website-into-a-guarded-ai-agent",
+    "title": "agent net open sources webagent a go harness that turns any website into a guarded ai agent"
   }
 ]
