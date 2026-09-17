@@ -2502,5 +2502,17 @@
   {
     "url": "https://www.zdnet.com/innovation/claude-chat-absorbs-cowork-anthropic",
     "title": "anthropic merges claude chat and cowork into one"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-aniimo",
+    "title": "cute critters come to the cloud aniimo launches on geforce now"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/09/17/openai-releases-a-model-misalignment-disclosure-framework-with-3-review-tracks-and-6-incident-reports-from-rl-training",
+    "title": "openai releases a model misalignment disclosure framework with 3 review tracks and 6 incident reports from rl training"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/09/16/google-research-introduces-retrieve-for-train-r4t-an-rl-compiled-diffusion-retriever-for-12x-to-20x-faster-query-fan-out",
+    "title": "google research introduces retrieve for train r4t an rl compiled diffusion retriever for 12 to 20 faster query fan out"
   }
 ]
