@@ -2530,5 +2530,17 @@
   {
     "url": "https://www.marktechpost.com/2026/09/18/alibaba-qwen-releases-qwen3-8-omni-flash",
     "title": "alibaba qwen releases qwen3 8 omni flash a 1m context omni modal model built around agentic audio video understanding and tool use"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-year-to-date-launches-in-review",
+    "title": "amazon sagemaker inference 2026 year to date launches in review"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/09/18/prismml-releases-ternary-bonsai-2-27b-a-5-9-gb-apache-2-0-model-retaining-98-2-of-qwen3-8-27b-performance",
+    "title": "prismml releases ternary bonsai 2 27b a 5 9 gb apache 2 0 model retaining 98 2 of qwen3 8 27b performance"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/09/18/jina-ai-releases-jina-ocr-v1-a-3-4b-moe-document-parser-with-built-in-speculative-decoding-for-low-budget-gpus",
+    "title": "jina ai releases jina ocr v1 a 3 4b moe document parser with built in speculative decoding for low budget gpus"
   }
 ]
