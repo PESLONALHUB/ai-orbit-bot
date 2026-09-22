@@ -2614,5 +2614,17 @@
   {
     "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
     "title": "higgsfield ai ships new video features in a day with gpt 6 astra"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics",
+    "title": "nvidia isaac ros 5 0 advances agentic open source robotics development"
+  },
+  {
+    "url": "https://www.eetimes.com/guc-announces-2nm-16-gbps-hbm4e-ip",
+    "title": "guc announces 2nm 16 gbps hbm4e ip"
+  },
+  {
+    "url": "https://pytorch.org/blog/how-shopify-built-a-continual-learning-loop-with-pytorch-and-vllm",
+    "title": "how shopify built a continual learning loop with pytorch and vllm"
   }
 ]
