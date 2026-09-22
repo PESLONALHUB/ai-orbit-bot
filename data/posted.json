@@ -2626,5 +2626,17 @@
   {
     "url": "https://pytorch.org/blog/how-shopify-built-a-continual-learning-loop-with-pytorch-and-vllm",
     "title": "how shopify built a continual learning loop with pytorch and vllm"
+  },
+  {
+    "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna",
+    "title": "openai launches gpt 6 sol and luna boasting lower cost and fewer mistakes"
+  },
+  {
+    "url": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai",
+    "title": "qualcomm launches two new smartphone chips with emphasis on ai"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/claude-opus-5-5-is-now-available-on-aws",
+    "title": "claude opus 5 5 is now available on aws"
   }
 ]
