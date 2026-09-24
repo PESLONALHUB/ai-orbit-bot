@@ -2650,5 +2650,17 @@
   {
     "url": "https://blogs.nvidia.com/blog/nvidia-life-sakeena-fiza",
     "title": "sakeena fiza helps nvidia hardware succeed at scale"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/09/23/contrastive-lm-releases-clm-8b-an-open-system-one-model-that-scores-agent-actions-up-to-9x-faster-than-jev",
+    "title": "contrastive lm releases clm 8b an open system one model that scores agent actions up to 9 faster than jev"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/09/23/google-releases-gemini-3-8-flash-tts-and-flash-lite-tts-with-prompt-based-voice-design",
+    "title": "google releases gemini 3 8 flash tts and flash lite tts with prompt based voice design"
+  },
+  {
+    "url": "https://news.mit.edu/2026/studying-cities-using-visual-ai-fabio-duarte-martina-mazzarello-carlo-ratti-fan-zhang-book-0924",
+    "title": "the promise and peril of using visual ai to study cities"
   }
 ]
