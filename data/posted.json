@@ -2710,5 +2710,17 @@
   {
     "url": "https://openai.com/index/airbnb-gpt-6-astra",
     "title": "airbnb widens access to gpt 6 astra and openai frontier models"
+  },
+  {
+    "url": "https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents",
+    "title": "nvidia launches new platform for reining in rogue ai agents"
+  },
+  {
+    "url": "https://techcrunch.com/2026/09/28/meta-launches-enterprise-ai-platform-hires-mongodb-ceo-to-lead-new-initiative",
+    "title": "meta launches enterprise ai platform hires mongodb ceo to lead new initiative"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/09/28/nvidia-launches-open-agent-safety-platform",
+    "title": "nvidia launches open agent safety platform openshell sandboxes agents on vera cpus while sentry on bluefield 4 quarantines them in milliseconds"
   }
 ]
