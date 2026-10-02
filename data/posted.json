@@ -2806,5 +2806,17 @@
   {
     "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
     "title": "autosynthdata generating training data for enterprise agents"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/10/02/nvidia-announces-dgx-spark-64gb-a-1-petaflop-grace-blackwell-desktop-for-local-ai-agents-fine-tuning-and-inference",
+    "title": "nvidia announces dgx spark 64gb a 1 petaflop grace blackwell desktop for local ai agents fine tuning and inference"
+  },
+  {
+    "url": "https://openai.com/index/practical-guide-building-gpt-6",
+    "title": "a model guide for the gpt 6 family"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/add-secure-web-search-to-claude-desktop-with-amazon-bedrock-agentcore",
+    "title": "add secure web search to claude desktop with amazon bedrock agentcore"
   }
 ]
