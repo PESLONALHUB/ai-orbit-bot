@@ -2794,5 +2794,17 @@
   {
     "url": "https://techcrunch.com/2026/10/01/google-thinks-spacexs-starship-has-to-launch-1600-times-before-space-data-centers-get-off-the-ground",
     "title": "google thinks spacex s starship has to launch 1 800 times before space data centers get off the ground"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast",
+    "title": "how nvidia gpus help accelerate openai s gpt 6 astra ultrafast"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/10/01/aws-strands-labs-releases-strands-decider-2b",
+    "title": "aws strands labs releases strands decider 2b an open source decision model that picks options in about 115 ms"
+  },
+  {
+    "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+    "title": "autosynthdata generating training data for enterprise agents"
   }
 ]
