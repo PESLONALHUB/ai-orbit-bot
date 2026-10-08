@@ -2882,5 +2882,17 @@
   {
     "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws",
     "title": "introducing claude haiku 5 5 on aws"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/10/07/perplexity-ai-releases-pplx-embed-v2-late-a-0-6b-edge-model-and-a-9b-model-scoring-92-4-on-madqa",
+    "title": "perplexity ai releases pplx embed v2 late a 0 6b edge model and a 9b model scoring 92 4 on madqa"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/10/07/anthropic-releases-claude-haiku-5-5-a-small-model-with-1m-context-priced-at-0-10-per-million-input-tokens",
+    "title": "anthropic releases claude haiku 5 5 a small model with 1m context priced at 0 10 per million input tokens"
+  },
+  {
+    "url": "https://news.mit.edu/2026/mitigating-environmental-threat-of-data-centers-christina-delimitrou-1008",
+    "title": "using ai to mitigate the growing environmental threat of data centers"
   }
 ]
