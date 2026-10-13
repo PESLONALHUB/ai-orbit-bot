@@ -2966,5 +2966,17 @@
   {
     "url": "https://openai.com/business/guides-and-resources/a-practical-guide-to-building-with-ai",
     "title": "building with the gpt 5 model series a practical guide"
+  },
+  {
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon",
+    "title": "gemini 4 argon built to solve your hardest problems"
+  },
+  {
+    "url": "https://roboflow.com/blog/use-gemini-4-argon",
+    "title": "use gemini 4 argon to build computer vision applications"
+  },
+  {
+    "url": "https://www.langchain.com/blog/deep-agents-deploy-an-open-alternative-to-claude-managed-agents",
+    "title": "deep agents deploy an open alternative to claude managed agents"
   }
 ]
