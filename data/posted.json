@@ -3066,5 +3066,17 @@
   {
     "url": "https://blogs.nvidia.com/blog/uk-ecosystem-deployment",
     "title": "nvidia announces new investments in the uk startup ecosystem"
+  },
+  {
+    "url": "https://www.analyticsvidhya.com/blog/2026/10/rea-ai-agent-reverse-engineer-anything",
+    "title": "reverse engineer anything rea can ai really crack closed code"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/10/17/how-to-make-zero-training-tabular-predictions-with-nvidia-structured-data-models",
+    "title": "how to make zero training tabular predictions with nvidia structured data models"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/10/18/google-harness2-recursive-agent-harnessing-framework",
+    "title": "google open sources harness2 a recursive agent harnessing framework"
   }
 ]
