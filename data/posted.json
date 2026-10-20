@@ -3114,5 +3114,17 @@
   {
     "url": "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production",
     "title": "nvidia advances agentic security for media from european public service broadcasting to global content production"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/access-openai-gpt-models-on-amazon-bedrock-from-canada-with-cross-region-inference",
+    "title": "access openai gpt models on amazon bedrock from canada with cross region inference"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/10/20/deepseek-deepinfer-open-source-inference-framework",
+    "title": "deepseek open sources deepinfer the inference framework behind deepseek v4 1 flash"
+  },
+  {
+    "url": "https://www.zdnet.com/tech/gemini-on-android-auto-can-look-through-my-photos-emails-and-calendar-now-im-cautiously-optimistic",
+    "title": "gemini on android auto can access my photos emails and calendar now why i m ok with that mostly"
   }
 ]
