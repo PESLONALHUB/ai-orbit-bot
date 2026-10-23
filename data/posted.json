@@ -3198,5 +3198,17 @@
   {
     "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
     "title": "openai and poland s nask partner to advance ai safety and security"
+  },
+  {
+    "url": "https://research.google/blog/bringing-foundational-models-to-the-front-lines-of-tb-screening",
+    "title": "bringing foundational models to the front lines of tb screening"
+  },
+  {
+    "url": "https://www.analyticsvidhya.com/blog/2026/10/llm-inference-explained-optimization-techniques",
+    "title": "llm inference explained how models generate responses faster"
+  },
+  {
+    "url": "https://huggingface.co/blog/allenai/litpivot",
+    "title": "litpivot developing research ideas through dynamic contextualization within the literature landscape"
   }
 ]
