@@ -3210,5 +3210,17 @@
   {
     "url": "https://huggingface.co/blog/allenai/litpivot",
     "title": "litpivot developing research ideas through dynamic contextualization within the literature landscape"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/10/24/anthropic-sandbox-runtime-ai-agent-sandbox",
+    "title": "meet anthropic s sandbox runtime os level sandboxing for ai agents no containers"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/10/23/nvidia-nemotron-3-5-bolt-e4b-4gb",
+    "title": "nvidia releases nemotron 3 5 bolt e4b 4gb an open small language model for local voice agents game characters and robots"
+  },
+  {
+    "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks",
+    "title": "openai says it will no longer train its ai models on the live internet citing significant risks"
   }
 ]
