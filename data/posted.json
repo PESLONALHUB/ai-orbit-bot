@@ -3246,5 +3246,17 @@
   {
     "url": "https://www.marktechpost.com/2026/10/24/cognition-devin-vulnerability-fixes-plugin-php2shell-nodejs-gitlab",
     "title": "cognition open sources an agent plugin that helps secure systems against recent cybersecurity threats"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/10/25/anthropic-launches-oss-scanner-a-free-ai-vulnerability-scanner",
+    "title": "anthropic launches oss scanner a free ai vulnerability scanner"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/10/25/stanford-berkeley-tokengate-learned-token-pruning-llm-prefill",
+    "title": "researchers from stanford and uc berkeley introduce tokengate token gated attention makes long context prefill up to 11 3x faster"
+  },
+  {
+    "url": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about",
+    "title": "the hottest ai wearables and gadgets you should know about"
   }
 ]
