@@ -3234,5 +3234,17 @@
   {
     "url": "https://www.marktechpost.com/2026/10/23/moonshot-ai-kimi-k3-1-pro-open-weight-model",
     "title": "moonshot ai releases kimi k3 1 pro a 2 8t total 104b active params moe model with 1m context"
+  },
+  {
+    "url": "https://www.analyticsvidhya.com/blog/2026/10/kimi-k3-1-pro-review",
+    "title": "kimi k3 1 pro review near opus quality at 1 5th the cost"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/10/24/microsoft-agensh-multi-agent-harness-1024-agents",
+    "title": "microsoft open sources agensh a multi agent harness for 1 024 agents"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/10/24/cognition-devin-vulnerability-fixes-plugin-php2shell-nodejs-gitlab",
+    "title": "cognition open sources an agent plugin that helps secure systems against recent cybersecurity threats"
   }
 ]
