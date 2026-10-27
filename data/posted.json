@@ -3274,5 +3274,17 @@
   {
     "url": "https://www.analyticsvidhya.com/blog/2026/10/astra-vs-argon-vs-opus",
     "title": "gpt 6 astra vs gemini 4 argon vs claude opus 5 5 full comparsion"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/10/27/mirendil-fern-10m-token-context-model",
+    "title": "mirendil launches fern 0 1 its first model with 10m token context"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/10/26/openai-gpt-6-1-terra",
+    "title": "openai launches gpt 6 1 terra halving gpt 6 1 sol s api price for agent work"
+  },
+  {
+    "url": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus",
+    "title": "nvidia backs indian startup helping companies run ai models with fewer gpus"
   }
 ]
