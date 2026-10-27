@@ -3286,5 +3286,17 @@
   {
     "url": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus",
     "title": "nvidia backs indian startup helping companies run ai models with fewer gpus"
+  },
+  {
+    "url": "https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace",
+    "title": "meta ai director rohit patel leaves to take on microsoft office and google workspace"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/open-source-ai-tools-cbrain-dementia",
+    "title": "how ai is changing the pace of discovery for millions living with dementia"
+  },
+  {
+    "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning",
+    "title": "the sleep framework a new way for llms to retain knowledge in continual learning"
   }
 ]
