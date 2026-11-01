@@ -3322,5 +3322,17 @@
   {
     "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-phantom-blade-zero",
     "title": "slice into gfn thursday phantom blade zero launches on geforce now"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/11/01/deepseek-dsh-superagent-router-worker-coding-agent",
+    "title": "deepseek open sources dsh superagent a router worker coding agent"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/11/01/nace-ai-open-sources-drex-max-v1-local-inference",
+    "title": "nace ai open sources drex max v1 a 27b decision model that runs locally on apple silicon"
+  },
+  {
+    "url": "https://openai.com/index/oracle-apps-in-chatgpt",
+    "title": "openai expands partnership with oracle to bring its apps to chatgpt"
   }
 ]
