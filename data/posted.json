@@ -3382,5 +3382,17 @@
   {
     "url": "https://huggingface.co/blog/allenai/toyblocks",
     "title": "toyblocks a controlled world for robot learning and evaluation"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks",
+    "title": "how nvidia open source tools are helping researchers build next generation 6g networks"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls",
+    "title": "extend claude code to remote sessions on amazon bedrock agentcore with security controls"
+  },
+  {
+    "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent",
+    "title": "meta introduces spaces a new way to collaborate with your muse agent"
   }
 ]
