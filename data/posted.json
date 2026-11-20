@@ -3582,5 +3582,17 @@
   {
     "url": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand",
     "title": "amazon polly launches voice cloning a unique voice for your brand"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/11/20/nvidia-nemotron-labs-sigma-continuous-diffusion-language-model",
+    "title": "nvidia ai releases nemotron labs sigma a continuous diffusion language model with 14 checkpoints at 3b 8b"
+  },
+  {
+    "url": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues",
+    "title": "the fallout from nvidia s jensen huang scandal continues"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai",
+    "title": "how standard bank group automates ai risk assessment for generative ai"
   }
 ]
