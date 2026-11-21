@@ -3594,5 +3594,17 @@
   {
     "url": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai",
     "title": "how standard bank group automates ai risk assessment for generative ai"
+  },
+  {
+    "url": "https://research.google/blog/how-google-duplex-evolved-to-also-call-businesses-for-you-in-gemini",
+    "title": "how google duplex evolved to also call businesses for you in gemini"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/11/20/baseten-bison-1-groundhog-1-gemma-4-decision-models",
+    "title": "baseten releases bison 1 and groundhog 1 topping decision model index"
+  },
+  {
+    "url": "https://aws.amazon.com/blogs/machine-learning/cut-self-hosted-llm-cost-and-latency-with-the-distributed-kv-caching-agent-skill",
+    "title": "cut self hosted llm cost and latency with the distributed kv caching agent skill"
   }
 ]
