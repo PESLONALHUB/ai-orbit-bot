@@ -3606,5 +3606,17 @@
   {
     "url": "https://aws.amazon.com/blogs/machine-learning/cut-self-hosted-llm-cost-and-latency-with-the-distributed-kv-caching-agent-skill",
     "title": "cut self hosted llm cost and latency with the distributed kv caching agent skill"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/11/22/nvidia-alpamayo-2-edge-2b-reasoning-vla-drive-thor",
+    "title": "nvidia releases alpamayo 2 edge a 2b reasoning vla for drive thor"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/11/22/google-gemini-api-tool-retrieval",
+    "title": "google ai previews tool retrieval in the gemini api for large tool libraries"
+  },
+  {
+    "url": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash",
+    "title": "why data centers are at the center of the big tech backlash"
   }
 ]
