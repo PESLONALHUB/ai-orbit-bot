@@ -3642,5 +3642,13 @@
   {
     "url": "https://www.marktechpost.com/2026/11/23/zai-glm-5-4-loop-transformer",
     "title": "z ai releases glm 5 4 a 750b loop transformer that runs 28 layers twice"
+  },
+  {
+    "url": "https://www.marktechpost.com/2026/11/23/anthropic-claude-ship-pull-request-agents",
+    "title": "anthropic launches claude ship for github pull request review and fixes"
+  },
+  {
+    "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes",
+    "title": "anthropic launches claude ship letting ai agents review fix and approve code changes"
   }
 ]
