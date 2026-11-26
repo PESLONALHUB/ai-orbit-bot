@@ -3650,5 +3650,17 @@
   {
     "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes",
     "title": "anthropic launches claude ship letting ai agents review fix and approve code changes"
+  },
+  {
+    "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+    "title": "introducing the llama cpp benchmark dashboard for amd ryzen and radeon"
+  },
+  {
+    "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-community-war-thunder-reward",
+    "title": "come for the games stay for the community with geforce now"
+  },
+  {
+    "url": "https://www.analyticsvidhya.com/blog/2026/11/world-models-llm-limitations",
+    "title": "world models why yann lecun believes llms are a dead end"
   }
 ]
